@@ -1,3 +1,48 @@
-<html>
-spin the nazrin!!
-</html>
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<title>Spin the Nazrin!!!</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100;400&display=swap" rel="stylesheet">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100;400&family=Yanone+Kaffeesatz&display=swap" rel=		"stylesheet">
+		
+	</HEAD>
+	<BODY>
+		<div class="pageBorder" align="center">
+			<H1 class="hiText">Spin the Nazrin!</H1>
+			<button onclick="spinNazrin()" class="spinButton">Spin Nazrin</button>
+			<div>
+			<h1 class="baseText">You've spun Nazrin <a id="spinCounter">0</a> times</h1>
+			</div>
+			<video id="spinNazrinVideo" width="640" height ="320">
+				<source src="assets/nazrin.mp4" type="video/mp4">
+			</video>
+			<br><br>
+		</div>
+			
+		<div class="bottomStuff" align="center">
+			
+			<video autoplay loop controls width="320" height="240">
+				<source src="assets/BGMusic.webm" type="video/webm">
+			</video>
+			<h1 class="smallText">2020 yuzusio</h1>
+			<h1 class="smallText">11/23 v1</h1>
+		</div>
+	<script>
+		var nazSpin = document.getElementById("spinNazrinVideo");
+		
+		spinCounter = 0;
+		function spinNazrin(){
+			spinCounter ++;
+			document.getElementById("spinCounter").innerHTML = spinCounter;
+			nazSpin.currentTime = 0;
+			nazSpin.play();		
+			}
+	</script>
+	</BODY>
+</HTML>
+

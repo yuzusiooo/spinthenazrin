@@ -1,0 +1,37 @@
+body {
+	background:url('assets/image/bgimgedit.png')
+}
+
+.pageBorder {
+	border-style: solid;
+	color: #333333;
+	background-color: #333333;
+	width: 70%;
+	margin: auto;
+}
+.bottomStuff {
+	width: 80%;
+	margin: auto;
+}
+
+.spinButton {
+	margin-bottom: 12px;
+}
+
+.hiText {
+	font-size: 100px;
+	font-family: 'Texturina', serif;
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.baseText {
+	font-size: 32px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: white;
+}
+.smallText {
+	font-size: 18px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color:white;
+}
